@@ -1,0 +1,12 @@
+
+services:
+  openmc:
+    image: openmc/openmc:latest
+    container_name: fluxforge-openmc
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../data:/data  # Local project data folder for easy access
+      - ../scripts:/scripts  # Scripts folder for .py scripts
+      - ../engine:/engine # C++ reactor physics engine code for data exchange
+    working_dir: /data  # Default pwd
