@@ -1,0 +1,22 @@
+
+# ---------- OpenMC ----------
+data/openmc_simulations/*/statepoint*.h5
+data/openmc_simulations/*/summary.h5
+data/openmc_simulations/*/plot_*.ppm
+data/openmc_simulations/*/plot_*.png
+
+
+# Nuclear data libraries (handled outside Git; use README for download URL)
+data/xs/
+
+
+# Docker artefacts
+docker/*.log
+.env
+
+
+# IDE / build artefacts
+.vscode/
+.idea/
+build/
+EOF

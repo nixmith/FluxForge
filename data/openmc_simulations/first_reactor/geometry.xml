@@ -1,0 +1,31 @@
+<geometry>
+
+    <!-- ========= SURFACES ========= -->
+    <!-- Radial cylinders -->
+    <surface id="1" type="z-cylinder" coeffs="0.0 0.0 150.0"/>
+    <surface id="2" type="z-cylinder" coeffs="0.0 0.0 165.0"/>
+    <surface id="3" type="z-cylinder" coeffs="0.0 0.0 182.9" boundary="vacuum"/>
+
+    <!-- Axial planes -->
+    <surface id="4" type="z-plane" coeffs="-200.0" boundary="vacuum"/> <!-- bottom -->
+    <surface id="5" type="z-plane" coeffs="200.0"  boundary="vacuum"/> <!-- top    -->
+
+    <!-- ========= CELLS ========= -->
+    <!-- Fuel (inside cyl‑1, between planes 4 and 5) -->
+    <cell id="1" material="1" region="-1 4 -5"/>
+
+    <!-- Moderator (between cyl‑1 and cyl‑2) -->
+    <cell id="2" material="5" region="1 -2 4 -5"/>
+
+    <!-- Thermal shield / vessel (between cyl‑2 and cyl‑3) -->
+    <cell id="3" material="6" region="2 -3 4 -5"/>
+
+    <!-- Outside world (vacuum) :   outside cyl‑3  OR  below bottom  OR  above top -->
+    <cell id="4" material="void" region="3 | -4 | 5"/>
+
+    <!-- ========= ROOT UNIVERSE ========= -->
+    <universe id="0">
+        <cells>1 2 3 4</cells>
+    </universe>
+
+</geometry>

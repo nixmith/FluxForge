@@ -1,0 +1,8 @@
+<tallies>
+    <tally id="1" name="flux_fission">
+        <filters>
+            <cellbins>1 2 3</cellbins>
+        </filters>
+        <scores>flux fission</scores>
+    </tally>
+</tallies>

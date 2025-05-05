@@ -1,0 +1,50 @@
+<materials>
+    <!-- UO2 Fuel -->
+    <material id="1" name="UO2 Fuel">
+        <density units="g/cm3" value="10.5"/>
+        <nuclide ao="0.90" name="U235"/>
+        <nuclide ao="0.10" name="U238"/>
+        <nuclide ao="2.0" name="O16"/>
+    </material>
+
+    <!-- Zirconium Alloy Cladding (Zircaloy approximated as pure Zr) -->
+    <material id="2" name="Zircaloy">
+        <density units="g/cm3" value="6.56"/>
+        <nuclide ao="0.5145" name="Zr90"/>
+        <nuclide ao="0.1122" name="Zr91"/>
+        <nuclide ao="0.1715" name="Zr92"/>
+        <nuclide ao="0.1738" name="Zr94"/>
+        <nuclide ao="0.0280" name="Zr96"/>
+    </material>
+
+    <!-- Hafnium (Control Rods & Distributed Poison) -->
+    <material id="3" name="Hafnium">
+        <density units="g/cm3" value="13.31"/>
+        <nuclide ao="0.3508" name="Hf180"/>
+        <nuclide ao="0.1860" name="Hf178"/>
+        <nuclide ao="0.2728" name="Hf177"/>
+        <nuclide ao="0.1362" name="Hf179"/>
+        <nuclide ao="0.0542" name="Hf176"/>
+    </material>
+
+    <!-- Boron-10 (Lumped Poison) -->
+    <material id="4" name="Boron">
+        <density units="g/cm3" value="2.34"/>
+        <nuclide ao="1.0" name="B10"/>
+    </material>
+
+    <!-- Pure Water Moderator -->
+    <material id="5" name="Moderator">
+        <density units="g/cm3" value="1.0"/>
+        <nuclide ao="2.0" name="H1"/>
+        <nuclide ao="1.0" name="O16"/>
+    </material>
+
+    <!-- NiCrFe (Stainless steel approximation: SS304) -->
+    <material id="6" name="NiCrFe">
+        <density units="g/cm3" value="8.19"/>
+        <nuclide ao="0.6800" name="Fe56"/>
+        <nuclide ao="0.1900" name="Cr52"/>
+        <nuclide ao="0.1300" name="Ni58"/>
+    </material>
+</materials>

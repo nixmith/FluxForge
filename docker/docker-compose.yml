@@ -7,6 +7,10 @@ services:
     tty: true
     volumes:
       - ../data:/data  # Local project data folder for easy access
+      - ../data/xs/endfb80:/xs  # ENDF/B-VIII.0 nuclear data lib
+      - ../data/xs/jeff32:/xs  # JEFF 3.2 nuclear data lib
       - ../scripts:/scripts  # Scripts folder for .py scripts
       - ../engine:/engine # C++ reactor physics engine code for data exchange
     working_dir: /data  # Default pwd
+    environment:
+      OPENMC_CROSS_SECTIONS: /xs/cross_sections.xml

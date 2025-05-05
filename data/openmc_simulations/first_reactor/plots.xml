@@ -1,0 +1,8 @@
+<plots>
+    <plot id="1" type="slice" basis="xy">
+        <origin>0 0 0</origin>
+        <width>400 400</width>
+        <pixels>600 600</pixels>
+        <color_by>material</color_by>
+    </plot>
+</plots>

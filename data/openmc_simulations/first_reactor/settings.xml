@@ -1,0 +1,15 @@
+<settings>
+    <run_mode>eigenvalue</run_mode>
+    <particles>10000</particles>
+    <batches>100</batches>
+    <inactive>20</inactive>
+
+    <source>
+        <space type="box">
+            <parameters>-150 -150 -150 150 150 150</parameters>
+        </space>
+    </source>
+
+    <temperature method="interpolation" tolerance="10" multipole="false"/>
+    <temperature_default units="K">600</temperature_default>
+</settings>
