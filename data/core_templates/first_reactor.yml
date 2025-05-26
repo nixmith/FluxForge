@@ -1,0 +1,37 @@
+reactor_core:
+  description: "Initial FluxForge PWR Core Design"
+  geometry:
+    inlet_nozzles: 2
+    outlet_nozzles: 2
+    nozzle_separation_deg: 180
+    core_material: NiCrFe
+    thermal_shield_material: NiCrFe
+    moderator_material: H2O
+  coolant_flow_path:
+    description: "Down vessel sides → up through fuel assemblies → down second pass channels → up outlet plenum"
+    inlet_temperature_celsius: 290
+    flow_rate_kg_s: 15000
+  fuel:
+    type: UO2
+    enrichment_percent: 90
+    mass_kg: 1000
+  fuel_assemblies:
+    total: 16
+    main_pattern:
+      count: 12
+      arrangement: "+"
+      rods_per_assembly: 264
+    corner_assemblies:
+      count: 4
+      rods_per_assembly: 144
+      burnable_poison:
+        material: Gadolinium
+        concentration_percent: 5.0
+  control_rods:
+    total_rods: 12
+    material: Hafnium
+    tip_material: Zircaloy
+  fuel_rods:
+    cladding_material: Zirconium Alloy
+    rod_diameter_mm: 9.5
+    rod_pitch_mm: 12.6

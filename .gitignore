@@ -4,6 +4,7 @@ data/openmc_simulations/*/statepoint*.h5
 data/openmc_simulations/*/summary.h5
 data/openmc_simulations/*/plot_*.ppm
 data/openmc_simulations/*/plot_*.png
+data/openmc_simulations/*/tallies.out
 
 
 # Nuclear data libraries (handled outside Git; use README for download URL)

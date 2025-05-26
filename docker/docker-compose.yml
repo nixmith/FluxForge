@@ -11,6 +11,6 @@ services:
       - ../data/xs/jeff32:/xs  # JEFF 3.2 nuclear data lib
       - ../scripts:/scripts  # Scripts folder for .py scripts
       - ../engine:/engine # C++ reactor physics engine code for data exchange
-    working_dir: /data  # Default pwd
+    working_dir: /data/openmc_simulations/first_reactor  # Default pwd for running OpenMC and testing first_reactor
     environment:
-      OPENMC_CROSS_SECTIONS: /xs/cross_sections.xml
+      OPENMC_CROSS_SECTIONS: /xs/cross_sections.xml # It should be noted there is a cross_sections.xml file in both /data/xs/endfb80 and /data/xs/jeff32
